@@ -1,0 +1,34 @@
+{
+    "name": "kangyasin/signature",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kang Yasin",
+            "email": "tutorialblogmarine@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/contracts": "^8.*",
+        "illuminate/support": "^8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.*",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kangyasin\\Signature\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kangyasin\\Signature\\ServiceProvider"
+            ],
+            "aliases": {
+                "Signature": "Kangyasin\\Signature\\Facade\\Signature"
+            }
+        }
+    }
+}
